@@ -24,10 +24,16 @@
 
 
   <footer>
-  2024 © Todos os direitos reservados
+    <p id="year-copyright"></p>
   </footer>
 
   <script src="app.js"></script>
+
+  <script>
+    const date = new Date()
+    let year = date.getFullYear()
+    document.getElementById("year-copyright").innerHTML = `${year} © Todos os direitos reservados `
+  </script>
 </body>
 
 </html>
